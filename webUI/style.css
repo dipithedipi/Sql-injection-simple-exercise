@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.login-section {
+    margin-bottom: 20px;
+}
+
+.info-section {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.info-section div {
+    margin-bottom: 10px;
+}

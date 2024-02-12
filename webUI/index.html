@@ -8,46 +8,47 @@
 </head>
 
 <body>
-    <h2 id="level-title"></h2>
-    <div>Status: <span id="status-value"></span></div>
-    <section> 
-        <div class="signin">
-            <div class="content">
-                <h2>Sign In</h2>
-                <div class="form">
-                    <div class="inputBox">
-                        <i>Username</i>
-                        <input type="text" id="username-input" required> 
-                    </div>
-                    <div class="inputBox">
-                        <i>Password</i>
-                        <input type="password" id="password-input" required> 
-                    </div>
-                    <select id="level-input">
-                        <option selected value="0">Level 0</option>
-                        <option value="1">Level 1</option>
-                        <option value="2">Level 2</option>
-                        <option value="3">Level 3</option>
-                    </select>
-                    <div class="inputBox">
-                        <input type="submit" id="submit-btn" value="Login">
-                    </div>
+    <div class="container">
+        <div>
+            <h2 id="level-title"></h2>
+            <div>Status: <span id="status-value"></span></div>
+        </div>
+        <div class="login-section">
+            <h2>Sign In</h2>
+            <div class="form">
+                <div class="inputBox">
+                    <i>Username</i>
+                    <input type="text" id="username-input" required>
+                </div>
+                <div class="inputBox">
+                    <i>Password</i>
+                    <input type="password" id="password-input" required>
+                </div>
+                <select id="level-input">
+                    <option selected value="0">Level 0</option>
+                    <option value="1">Level 1</option>
+                    <option value="2">Level 2</option>
+                    <option value="3">Level 3</option>
+                </select>
+                <div class="inputBox">
+                    <input type="submit" id="submit-btn" value="Login">
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Query result -->
-    <section>
-        <div>
-            Query Filters: <span id="query-filters"></span>
+
+        <!-- Query result -->
+        <div class="info-section">
+            <div>
+                Query Filters: <span id="query-filters"></span>
+            </div>
+            <div>
+                Query Executed: <span id="query-executed"></span>
+            </div>
+            <div>
+                Query Result: <span id="query-result"></span>
+            </div>
         </div>
-        <div>
-            Query Executed: <span id="query-executed"></span>
-        </div>
-        <div>
-            Query Result: <span id="query-result"></span>
-        </div>
-    </section>
+    </div>
     <script src="./script.js"></script>
 </body>
 
