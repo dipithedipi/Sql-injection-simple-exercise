@@ -5,6 +5,8 @@ function getLevelInfo(level) {
     fetch(`/login/lvl/${level}/info`)
         .then(response => response.json())
         .then(data => {
+            if(level == 0) data.filters[0] = "No filters";
+            if(level == 2 || level == 3) data.filters[0] = "[whitespace]";
             document.getElementById("level-title").innerText = data.title
             document.getElementById("query-filters").innerText = data.filters
         })
