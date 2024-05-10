@@ -26,7 +26,7 @@ levels = [
         filters: ["OR"], 
     },
     {
-        title: "Level 2: Find a way to leak only the admin credentials",
+        title: "Level 2: Find a way to leak the admin credentials",
         filters: [" ", "OR", "AND", "LIKE", "=", "--", "<", ">", "#", "admin"]
     },
     {
@@ -88,6 +88,8 @@ app.post('/login/lvl/:value', (req, res) => {
                     console.log("[+] level complete")
                 }  
             })
+
+            
 
             req.statusCode = 200
             res.send(
